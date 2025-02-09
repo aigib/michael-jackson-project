@@ -1,5 +1,69 @@
-h1 {
+body {
+  background: #020403;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/michael-jackson.jpeg);
+  background-repeat: no repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 260px 0;
+}
+
+header h1 {
   font-family: "Playfair Display", serif;
-  font-style: bold;
-  font-size: 96px;
+  font-size: 128px;
+  font-weight: 700;
+  margin: 0;
+}
+
+header h2 {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-size: 40px;
+  margin: 0;
+}
+
+header h3 {
+  font-size: 24px;
+  font-family: "Roboto", serif;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  font-size: 16px;
+  background-color: #885df1;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: 32px;
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 30px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
 }
