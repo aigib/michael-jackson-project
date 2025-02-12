@@ -9,12 +9,22 @@ body {
 
 .grid {
   display: grid;
+
+  grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -60,13 +70,39 @@ header a {
   display: inline-block;
 }
 
+main {
+  background: white;
+}
+
+main h2 {
+  font-family: "Poppins";
+  letter-spacing: 5px;
+  font-size: 13px;
+  color: #885df1;
+  margin: 0;
+}
+
+main h3 {
+  font-family: "Playfair";
+  font-size: 48px;
+  margin: 0;
+}
+main p {
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
 footer {
   color: white;
   background-image: linear-gradient(rgba(2, 4, 3, 0.8), rgba(2, 4, 3, 0.8)),
     url("../images/michael-footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 
 footer h3 {
@@ -111,5 +147,14 @@ footer li {
 
   header h3 {
     font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
